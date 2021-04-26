@@ -2,11 +2,10 @@
   "name": "ssapp-template",
   "version": "1.0.0",
   "description": "SSApp Template",
-  "main": "index.js",
   "scripts": {
-    "postinstall": "node ./node_modules/octopus/scripts/run devmode",
-    "prebuild": "node ./node_modules/octopus/scripts/run prebuild",
-    "build": "node ./node_modules/octopus/scripts/buildDossier.js",
+    "postinstall": "node ./node_modules/octopus/scripts/run",
+    "prebuild": "node ./node_modules/octopus/scripts/run prebuild devmode",
+    "build": "node ./node_modules/octopus/scripts/buildDossier",
     "postbuild": "node ./node_modules/octopus/scripts/run postbuild devmode",
     "update": "npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,7 +20,6 @@
   "keywords": [
     "ssapp"
   ],
-  "author": "",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/PrivateSky/ssapp-template/issues"
