@@ -1,3 +1,14 @@
 {
-  "pages": [{ "name": "Home" }]
+  "pagesFallback": {
+    "name": "home",
+    "src": "./home.html"
+  },
+  "pages": [
+    {
+      "name": "Home",
+      "tag": "home",
+      "src": "./home.html",
+      "path": "./"
+    }
+  ]
 }
